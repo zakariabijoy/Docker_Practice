@@ -1,5 +1,5 @@
-#copy httpd(apache server) from dockerhub 
-from httpd:alpine
+#copy httpd(apache server) from dockerhub  where 'httpd' is image, ':alpine' is tag and base is alias
+FROM httpd:alpine as base
 
 #copy file from html to htdocs to run it     
-copy ./html/ /usr/local/apache2/htdocs/    
+COPY ./html/ /usr/local/apache2/htdocs/     
