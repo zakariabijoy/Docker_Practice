@@ -6,3 +6,13 @@ COPY: to copy files from one to another destination
 	COPY <scr> <dest>
 	ex:COPY ./html/ /usr/local/apache2/htdocs/
 	ex2: COPY --from=base /usr/local/apache2/htdocs/ /app/    (one image to another image)
+	
+WORKDIR: make a path a root or main directory as workdirectory in container
+	ex: WORKDIR /usr/local/apache2/htdocs/    => . (now we can use . instead of /usr/local/apache2/htdocs/ )
+	ex2: 	WORKDIR /a
+			WORKDIR b
+			WORKDIR c
+			RUN pwd
+			
+			The output of the final pwd command in this Dockerfile would be /a/b/c.
+			
