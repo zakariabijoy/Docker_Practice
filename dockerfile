@@ -12,4 +12,7 @@ RUN dotnet build "csproj file"
 FROM httpd as final
 WORKDIR /MyCoolApp
 #copy file from previous httpd iimae to new httpd image to run it 
-COPY --from=base /usr/local/apache2/htdocs/ .    
+COPY --from=base /usr/local/apache2/htdocs/ .
+ENTRYPOINT ["ping"]
+#default arguments for an ENTRYPOINT. CMD will be overridden when running the container with alternative arguments.
+CMD["google.com"]    

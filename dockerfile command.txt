@@ -28,3 +28,6 @@ RUN: used to run a command in  shell , which by default is /bin/sh -c on Linux o
 
 VOLUME: used to save file outside of container into local machine and it will exist after container is off
 	ex:VOLUME /usr/local/apache2/htdocs/
+
+ENTRYPOINT: An ENTRYPOINT allows you to configure a container that will run as an executable.
+	ex: ENTRYPOINT ["ping", "google.com]   => ENTRYPOINT ["executable", "param1", "param2"]
