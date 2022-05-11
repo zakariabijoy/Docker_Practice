@@ -25,3 +25,6 @@ EXPOSE: used to documention of port number, means it used to documented the port
 RUN: used to run a command in  shell , which by default is /bin/sh -c on Linux or cmd /S /C on Windows)
 	ex: RUN dotnet build "csproj file"
 	ex2: RUN ["/bin/bash", "-c", "echo hello"]   => RUN ["executable", "param1", "param2"]
+
+VOLUME: used to save file outside of container into local machine and it will exist after container is off
+	ex:VOLUME /usr/local/apache2/htdocs/
