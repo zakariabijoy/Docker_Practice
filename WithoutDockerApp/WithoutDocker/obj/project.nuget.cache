@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JL1HB9P+9wZCFXtszKuAnN1zH7XLU0JzITlVlNOYWkjQcHS5zuIae0Wb1CZCgOMoVworbqCBalI+yX1g7kYf4g==",
+  "dgSpecHash": "qkC05zyDmR/EVWAtZwonT2ZzqMCTa6QF9yzFsoXGkM1NqRdhCetnvTFKd/PSu5cLBu01jC6aFgRw4efHmWB/zg==",
   "success": true,
   "projectFilePath": "D:\\Self\\Programming\\Docker\\WithoutDockerApp\\WithoutDocker\\WithoutDocker.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\zakar\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
   "logs": []
 }
