@@ -5,6 +5,7 @@ EXPOSE 80
 EXPOSE 433
 #copy file from html to htdocs to run it     
 COPY ./html/ .
+RUN dotnet build "csproj file"
 
 # new httpd image is pulled 
 FROM httpd as final

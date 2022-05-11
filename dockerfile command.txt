@@ -1,3 +1,5 @@
+resource: https://docs.docker.com/engine/reference/builder/
+
 FROM: used to pull image from docker hud
 	FROM <image>:<tag> as <name>
 	ex : FROM httpd:alpine as base
@@ -19,3 +21,7 @@ WORKDIR: make a path a root or main directory as workdirectory in container
 EXPOSE: used to documention of port number, means it used to documented the port number in docker file
 	ex:EXPOSE 80
 	ex2:EXPOSE 443
+	
+RUN: used to run a command in  shell , which by default is /bin/sh -c on Linux or cmd /S /C on Windows)
+	ex: RUN dotnet build "csproj file"
+	ex2: RUN ["/bin/bash", "-c", "echo hello"]   => RUN ["executable", "param1", "param2"]
