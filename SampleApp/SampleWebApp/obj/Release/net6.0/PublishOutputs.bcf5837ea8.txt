@@ -1,0 +1,7 @@
+D:\app\SampleWebApp.exe
+D:\app\appsettings.Development.json
+D:\app\appsettings.json
+D:\app\SampleWebApp.dll
+D:\app\SampleWebApp.deps.json
+D:\app\SampleWebApp.runtimeconfig.json
+D:\app\SampleWebApp.pdb
