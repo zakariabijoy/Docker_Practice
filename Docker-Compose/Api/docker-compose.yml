@@ -1,0 +1,15 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  ms-sql-server-express-docker:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Zb@21525"
+    ports:
+      - "1433:1433"
+  web-api:
+    build: .
+    environment:
+      ConnectionString: "Server=ms-sql-server-express-docker,1433; Initial Catalog=JWTDB; User Id=SA;Password=Zb@21525;" 
+    ports:
+      - "8080:80"
