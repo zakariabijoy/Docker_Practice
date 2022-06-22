@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OPXBQ1bTQT/crSXjnqbYZmaMZ/DJb8/y2oYTMuZEc5CrPQ0i30h4Hv+eZAlrzyDYW9bcSFYOTjbvGkgnyC6b5w==",
+  "dgSpecHash": "q0q+GqxeWpt+tY0MDMochnWO/8PbniLtw4c8BxvjMz+i9cvf/jXJ5/S3+gazttEljfXkKE1OlmHB0Dv6OVSphA==",
   "success": true,
-  "projectFilePath": "D:\\Jobs\\S3Innovate\\Tasks\\Projects\\JWTHttpOnlyCookie\\Api\\Api\\Api.csproj",
+  "projectFilePath": "D:\\Self\\Programming\\Docker\\Docker-Compose\\Api\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zakar\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\zakar\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.4\\microsoft.aspnetcore.authentication.jwtbearer.6.0.4.nupkg.sha512",

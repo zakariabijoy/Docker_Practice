@@ -1,0 +1,25 @@
+version: "3.9"  # optional since v1.27.0                      #version of docker-compose 
+services:													# we declare mutiple images under services for running multiple container under one network
+  ms-sql-server-express-docker:
+    image: mcr.microsoft.com/mssql/server:2019-latest       # sql server image from online docker hub
+    environment:											# passing environments for sql server container
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Zb@21525"
+    ports:													# define container port with host port
+      - "1433:1433"
+  web-api:													
+    build: .												#build web api image from local dockerfile of web api
+    environment:											#passing environments for web api 
+      ConnectionString: "Server=ms-sql-server-express-docker,1433; Initial Catalog=JWTDB; User Id=SA;Password=Zb@21525;"   #define server name from sql server container cause web api conatiner can access from internal network with service name
+    ports:													# define container port with host port
+      - "8080:80"
+	  
+	  
+	  
+	  
+	  
+  ===========================
+  docker-compose commands:
+  
+  docker compose up => Create and start container
+  docker compose down => Stop and remove containers, networks, images, and volumes
